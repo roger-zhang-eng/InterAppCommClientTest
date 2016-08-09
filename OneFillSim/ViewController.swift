@@ -50,10 +50,10 @@ class ViewController: UIViewController, UITextViewDelegate {
                     
                     
                     //reply data back to URL sender
-                    let jsonData = try NSJSONSerialization.dataWithJSONObject(["loginOkay"], options:[])
+                    /*let jsonData = try NSJSONSerialization.dataWithJSONObject(["loginOkay"], options:[])
                     
                     let jsonStr = NSString(data: jsonData, encoding: NSUTF8StringEncoding) as! String
-                    success(["reply":jsonStr],false)
+                    success(["reply":jsonStr],false)*/
                     
                 } catch {
                     print("JSON serialization failed: \(error)")

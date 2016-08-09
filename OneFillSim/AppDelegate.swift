@@ -29,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
     func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
-        print("In OneFillSim: \(sourceApplication), url: \(url.absoluteString)")
+        //print("In OneFillSim: \(sourceApplication), url: \(url.absoluteString)")
         //Handle the url input information
         return IACManager.sharedManager().handleOpenURL(url)
     }
