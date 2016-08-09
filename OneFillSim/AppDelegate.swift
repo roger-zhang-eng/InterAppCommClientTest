@@ -8,6 +8,9 @@
 
 import UIKit
 
+var sourceAppName: String = "NA"
+var originalURLtext: String = "Waiting for coming..."
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
