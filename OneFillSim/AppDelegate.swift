@@ -12,6 +12,7 @@ import UIKit
 let loginValidTime: NSTimeInterval = 10.0 //login session valid time 10s
 let clientURLSchemeText = "maxwellforestonebank"
 let urlSchemeText = "maxwellforestonefill"
+var isiPad = true
 
 //For debug
 var sourceAppName: String = "NA"
@@ -29,6 +30,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //Register url scheme in library
         IACManager.sharedManager().callbackURLScheme = urlSchemeText
         
+        if(UIDevice.currentDevice().userInterfaceIdiom == UIUserInterfaceIdiom.Phone) {
+            isiPad = false
+            print("This is iPhone")
+        } else {
+            print("This is iPad")
+        }
         
         return true
     }

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="P6d-Ze-zu2">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="B2O-kx-9bj">
+            <objects>
+                <viewController id="P6d-Ze-zu2" customClass="ViewController" customModule="OneFillSim" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GVw-kh-8e2"/>
+                        <viewControllerLayoutGuide type="bottom" id="KAM-Le-Y2f"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="99e-MI-xa6">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="TextView Content..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SJi-V7-Zxg">
+                                <rect key="frame" x="5" y="266" width="758" height="750"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="750" id="Q12-T6-Xzx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8DZ-qO-LS1">
+                                <rect key="frame" x="5" y="28" width="80" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="D50-HU-eM6"/>
+                                    <constraint firstAttribute="height" constant="30" id="GWh-vG-YMa"/>
+                                </constraints>
+                                <state key="normal" title="Authen"/>
+                                <connections>
+                                    <action selector="authenClicked:" destination="P6d-Ze-zu2" eventType="touchUpInside" id="Ddk-gg-DqJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M8K-13-lWe">
+                                <rect key="frame" x="344" y="28" width="80" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="sSp-8Z-AUE"/>
+                                    <constraint firstAttribute="width" constant="80" id="wV1-oP-TPI"/>
+                                </constraints>
+                                <state key="normal" title="Shopping"/>
+                                <connections>
+                                    <action selector="shoppingClicked:" destination="P6d-Ze-zu2" eventType="touchUpInside" id="IML-qk-Mji"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kxI-lF-i9J">
+                                <rect key="frame" x="683" y="28" width="80" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="lMr-Nb-w9i"/>
+                                    <constraint firstAttribute="width" constant="80" id="seI-MB-2ZY"/>
+                                </constraints>
+                                <state key="normal" title="NA"/>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User session valid" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ra2-RL-mrD">
+                                <rect key="frame" x="20" y="66" width="728" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="f1V-kt-xBV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8DZ-qO-LS1" firstAttribute="leading" secondItem="99e-MI-xa6" secondAttribute="leading" constant="5" id="19o-lD-bjC"/>
+                            <constraint firstAttribute="trailing" secondItem="SJi-V7-Zxg" secondAttribute="trailing" constant="5" id="5nj-Ux-fc1"/>
+                            <constraint firstItem="8DZ-qO-LS1" firstAttribute="top" secondItem="GVw-kh-8e2" secondAttribute="bottom" constant="8" symbolic="YES" id="8q7-sT-4ND"/>
+                            <constraint firstItem="ra2-RL-mrD" firstAttribute="top" secondItem="M8K-13-lWe" secondAttribute="bottom" constant="8" id="9rr-OQ-7xk"/>
+                            <constraint firstItem="SJi-V7-Zxg" firstAttribute="centerX" secondItem="99e-MI-xa6" secondAttribute="centerX" id="OdG-fo-syw"/>
+                            <constraint firstAttribute="trailing" secondItem="kxI-lF-i9J" secondAttribute="trailing" constant="5" id="SP0-YR-cph"/>
+                            <constraint firstItem="kxI-lF-i9J" firstAttribute="top" secondItem="GVw-kh-8e2" secondAttribute="bottom" constant="8" symbolic="YES" id="USo-KX-eTQ"/>
+                            <constraint firstItem="ra2-RL-mrD" firstAttribute="centerX" secondItem="99e-MI-xa6" secondAttribute="centerX" id="Za2-qk-9sO"/>
+                            <constraint firstItem="KAM-Le-Y2f" firstAttribute="top" secondItem="SJi-V7-Zxg" secondAttribute="bottom" constant="8" symbolic="YES" id="d6u-kD-drY"/>
+                            <constraint firstItem="ra2-RL-mrD" firstAttribute="leading" secondItem="99e-MI-xa6" secondAttribute="leading" constant="20" id="e8X-8k-isG"/>
+                            <constraint firstAttribute="trailing" secondItem="ra2-RL-mrD" secondAttribute="trailing" constant="20" id="gUD-z4-jCZ"/>
+                            <constraint firstItem="SJi-V7-Zxg" firstAttribute="leading" secondItem="99e-MI-xa6" secondAttribute="leading" constant="5" id="h8p-Pu-6tx"/>
+                            <constraint firstItem="M8K-13-lWe" firstAttribute="centerX" secondItem="99e-MI-xa6" secondAttribute="centerX" id="ilh-ZM-P5o"/>
+                            <constraint firstItem="M8K-13-lWe" firstAttribute="top" secondItem="GVw-kh-8e2" secondAttribute="bottom" constant="8" symbolic="YES" id="r7S-Be-pJb"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="authenButton" destination="8DZ-qO-LS1" id="yT5-uf-qDC"/>
+                        <outlet property="contentTextView" destination="SJi-V7-Zxg" id="gLQ-kn-RB0"/>
+                        <outlet property="indication" destination="ra2-RL-mrD" id="gdt-KV-YHk"/>
+                        <outlet property="shoppingButton" destination="M8K-13-lWe" id="gcP-8U-p7U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QbS-on-Vdg" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="284" y="277"/>
+        </scene>
+    </scenes>
+</document>

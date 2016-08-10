@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22A4BA291D5B3C4E004EB572 /* iPadMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22A4BA271D5B3C4E004EB572 /* iPadMain.storyboard */; };
 		29C1F3872F3C62C9619588B0 /* Pods_OneFillSim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7C71A4F15EEDFD0C622C00D /* Pods_OneFillSim.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		E9974AD01D595F9E007F62C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9974ACF1D595F9E007F62C5 /* AppDelegate.swift */; };
 		E9974AD21D595F9E007F62C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9974AD11D595F9E007F62C5 /* ViewController.swift */; };
-		E9974AD51D595F9E007F62C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9974AD31D595F9E007F62C5 /* Main.storyboard */; };
+		E9974AD51D595F9E007F62C5 /* iPhoneMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9974AD31D595F9E007F62C5 /* iPhoneMain.storyboard */; };
 		E9974AD71D595F9E007F62C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9974AD61D595F9E007F62C5 /* Assets.xcassets */; };
 		E9974ADA1D595F9E007F62C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9974AD81D595F9E007F62C5 /* LaunchScreen.storyboard */; };
 		E9974AE51D595F9E007F62C5 /* OneFillSimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9974AE41D595F9E007F62C5 /* OneFillSimTests.swift */; };
@@ -29,13 +30,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		22A4BA281D5B3C4E004EB572 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/iPadMain.storyboard; sourceTree = "<group>"; };
 		342A4E784E30F36880309223 /* Pods-OneFillSim.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneFillSim.release.xcconfig"; path = "Pods/Target Support Files/Pods-OneFillSim/Pods-OneFillSim.release.xcconfig"; sourceTree = "<group>"; };
 		A7C71A4F15EEDFD0C622C00D /* Pods_OneFillSim.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneFillSim.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEAE9BFD9B949159C42F7F36 /* Pods-OneFillSim.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneFillSim.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OneFillSim/Pods-OneFillSim.debug.xcconfig"; sourceTree = "<group>"; };
 		E9974ACC1D595F9E007F62C5 /* OneFillSim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneFillSim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9974ACF1D595F9E007F62C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9974AD11D595F9E007F62C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E9974AD41D595F9E007F62C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E9974AD41D595F9E007F62C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/iPhoneMain.storyboard; sourceTree = "<group>"; };
 		E9974AD61D595F9E007F62C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9974AD91D595F9E007F62C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9974ADB1D595F9E007F62C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -110,7 +112,8 @@
 				E9974AF41D5AF702007F62C5 /* LoginModule.swift */,
 				E9974AF61D5AFF9D007F62C5 /* OnebankClient.swift */,
 				E9974AD11D595F9E007F62C5 /* ViewController.swift */,
-				E9974AD31D595F9E007F62C5 /* Main.storyboard */,
+				E9974AD31D595F9E007F62C5 /* iPhoneMain.storyboard */,
+				22A4BA271D5B3C4E004EB572 /* iPadMain.storyboard */,
 				E9974AD61D595F9E007F62C5 /* Assets.xcassets */,
 				E9974AD81D595F9E007F62C5 /* LaunchScreen.storyboard */,
 				E9974ADB1D595F9E007F62C5 /* Info.plist */,
@@ -214,8 +217,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9974ADA1D595F9E007F62C5 /* LaunchScreen.storyboard in Resources */,
+				22A4BA291D5B3C4E004EB572 /* iPadMain.storyboard in Resources */,
 				E9974AD71D595F9E007F62C5 /* Assets.xcassets in Resources */,
-				E9974AD51D595F9E007F62C5 /* Main.storyboard in Resources */,
+				E9974AD51D595F9E007F62C5 /* iPhoneMain.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,12 +311,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E9974AD31D595F9E007F62C5 /* Main.storyboard */ = {
+		22A4BA271D5B3C4E004EB572 /* iPadMain.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22A4BA281D5B3C4E004EB572 /* Base */,
+			);
+			name = iPadMain.storyboard;
+			sourceTree = "<group>";
+		};
+		E9974AD31D595F9E007F62C5 /* iPhoneMain.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				E9974AD41D595F9E007F62C5 /* Base */,
 			);
-			name = Main.storyboard;
+			name = iPhoneMain.storyboard;
 			sourceTree = "<group>";
 		};
 		E9974AD81D595F9E007F62C5 /* LaunchScreen.storyboard */ = {

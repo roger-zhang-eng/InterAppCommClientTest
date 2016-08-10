@@ -59,18 +59,30 @@ class ViewController: UIViewController, UITextViewDelegate {
         print("Launch Onebank to relogin")
         if launchOnebank() {
             if self.authentication {
-            self.timer = NSTimer.scheduledTimerWithTimeInterval(loginValidTime, target: self, selector: #selector(timerAction), userInfo: nil, repeats: false)
+                self.timer = NSTimer.scheduledTimerWithTimeInterval(loginValidTime, target: self, selector: #selector(timerAction), userInfo: nil, repeats: false)
             }
         } else {
             //Alert to install OneFill
-            let alert = UIAlertController(title: "Reminder", message: "OneFill need be installed now.", preferredStyle: UIAlertControllerStyle.ActionSheet)
+            let alert = UIAlertController(title: "Reminder", message: "Onebank need be installed now.", preferredStyle: UIAlertControllerStyle.ActionSheet)
             let confirm = UIAlertAction(title: "Install", style: UIAlertActionStyle.Default) { (action: UIAlertAction) -> Void in
                 print("Launch Apple Store to install Onebank.")
             }
             let cancel = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: nil)
             alert.addAction(confirm)
             alert.addAction(cancel)
-            presentViewController(alert, animated: true, completion: nil)
+            
+            if isiPad {
+                //iPad alert View need use popover
+                if let popover = alert.popoverPresentationController
+                {
+                        popover.sourceView = sender
+                        popover.sourceRect = sender.bounds
+                        popover.permittedArrowDirections = UIPopoverArrowDirection.Any
+                    
+                }
+            }
+            
+            self.presentViewController(alert, animated: true, completion: nil)
         }
         
     }
