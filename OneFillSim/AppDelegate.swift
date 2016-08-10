@@ -8,6 +8,12 @@
 
 import UIKit
 
+
+let loginValidTime: NSTimeInterval = 10.0 //login session valid time 10s
+let clientURLSchemeText = "maxwellforestonebank"
+let urlSchemeText = "maxwellforestonefill"
+
+//For debug
 var sourceAppName: String = "NA"
 var originalURLtext: String = "Waiting for coming..."
 
@@ -21,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         //Register url scheme in library
-        IACManager.sharedManager().callbackURLScheme = "maxwellforestonefill"
+        IACManager.sharedManager().callbackURLScheme = urlSchemeText
         
         
         return true

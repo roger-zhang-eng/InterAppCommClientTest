@@ -14,6 +14,8 @@
 		E9974AD71D595F9E007F62C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9974AD61D595F9E007F62C5 /* Assets.xcassets */; };
 		E9974ADA1D595F9E007F62C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9974AD81D595F9E007F62C5 /* LaunchScreen.storyboard */; };
 		E9974AE51D595F9E007F62C5 /* OneFillSimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9974AE41D595F9E007F62C5 /* OneFillSimTests.swift */; };
+		E9974AF51D5AF702007F62C5 /* LoginModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9974AF41D5AF702007F62C5 /* LoginModule.swift */; };
+		E9974AF71D5AFF9D007F62C5 /* OnebankClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9974AF61D5AFF9D007F62C5 /* OnebankClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,8 @@
 		E9974AE41D595F9E007F62C5 /* OneFillSimTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneFillSimTests.swift; sourceTree = "<group>"; };
 		E9974AE61D595F9E007F62C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9974AEF1D596729007F62C5 /* OneFillSim-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OneFillSim-Bridging-Header.h"; sourceTree = "<group>"; };
+		E9974AF41D5AF702007F62C5 /* LoginModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModule.swift; sourceTree = "<group>"; };
+		E9974AF61D5AFF9D007F62C5 /* OnebankClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnebankClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 			isa = PBXGroup;
 			children = (
 				E9974ACF1D595F9E007F62C5 /* AppDelegate.swift */,
+				E9974AF41D5AF702007F62C5 /* LoginModule.swift */,
+				E9974AF61D5AFF9D007F62C5 /* OnebankClient.swift */,
 				E9974AD11D595F9E007F62C5 /* ViewController.swift */,
 				E9974AD31D595F9E007F62C5 /* Main.storyboard */,
 				E9974AD61D595F9E007F62C5 /* Assets.xcassets */,
@@ -277,6 +283,8 @@
 			files = (
 				E9974AD21D595F9E007F62C5 /* ViewController.swift in Sources */,
 				E9974AD01D595F9E007F62C5 /* AppDelegate.swift in Sources */,
+				E9974AF51D5AF702007F62C5 /* LoginModule.swift in Sources */,
+				E9974AF71D5AFF9D007F62C5 /* OnebankClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
