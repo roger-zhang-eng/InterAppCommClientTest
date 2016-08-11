@@ -65,7 +65,10 @@ class ViewController: UIViewController, UITextViewDelegate {
             //Alert to install OneFill
             let alert = UIAlertController(title: "Reminder", message: "Onebank need be installed now.", preferredStyle: UIAlertControllerStyle.ActionSheet)
             let confirm = UIAlertAction(title: "Install", style: UIAlertActionStyle.Default) { (action: UIAlertAction) -> Void in
+                
                 print("Launch Apple Store to install Onebank.")
+                let url  = NSURL(string: "itms://itunes.apple.com/us/app/gourmet/id982206502")
+                UIApplication.sharedApplication().openURL(url!)
             }
             let cancel = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: nil)
             alert.addAction(confirm)
@@ -86,7 +89,7 @@ class ViewController: UIViewController, UITextViewDelegate {
         }
         
     }
-    
+
     
     @IBAction func shoppingClicked(sender: UIButton) {
         print("User want to shopping!")
