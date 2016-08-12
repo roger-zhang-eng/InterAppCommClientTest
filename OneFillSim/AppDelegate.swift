@@ -7,7 +7,8 @@
 //
 
 import UIKit
-
+import Fabric
+import Crashlytics
 
 let loginValidTime: NSTimeInterval = 10.0 //login session valid time 10s
 let clientURLSchemeText = "maxwellforestonebank"
@@ -36,6 +37,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } else {
             print("This is iPad")
         }
+        
+        Fabric.with([Crashlytics.self])
         
         return true
     }

@@ -17,6 +17,8 @@
 		E9974AE51D595F9E007F62C5 /* OneFillSimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9974AE41D595F9E007F62C5 /* OneFillSimTests.swift */; };
 		E9974AF51D5AF702007F62C5 /* LoginModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9974AF41D5AF702007F62C5 /* LoginModule.swift */; };
 		E9974AF71D5AFF9D007F62C5 /* OnebankClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9974AF61D5AFF9D007F62C5 /* OnebankClient.swift */; };
+		E9C075021D5D87A200448869 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C075001D5D87A200448869 /* Fabric.framework */; };
+		E9C075031D5D87A200448869 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C075011D5D87A200448869 /* Crashlytics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		E9974AEF1D596729007F62C5 /* OneFillSim-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OneFillSim-Bridging-Header.h"; sourceTree = "<group>"; };
 		E9974AF41D5AF702007F62C5 /* LoginModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModule.swift; sourceTree = "<group>"; };
 		E9974AF61D5AFF9D007F62C5 /* OnebankClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnebankClient.swift; sourceTree = "<group>"; };
+		E9C075001D5D87A200448869 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		E9C075011D5D87A200448869 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				29C1F3872F3C62C9619588B0 /* Pods_OneFillSim.framework in Frameworks */,
+				E9C075031D5D87A200448869 /* Crashlytics.framework in Frameworks */,
+				E9C075021D5D87A200448869 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +86,8 @@
 		9F960A7ACAFE0FF2AA40DAF4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E9C075001D5D87A200448869 /* Fabric.framework */,
+				E9C075011D5D87A200448869 /* Crashlytics.framework */,
 				A7C71A4F15EEDFD0C622C00D /* Pods_OneFillSim.framework */,
 			);
 			name = Frameworks;
@@ -144,6 +152,7 @@
 				E9974ACA1D595F9E007F62C5 /* Resources */,
 				C95E4E1CC37D113E0E0CDC27 /* Embed Pods Frameworks */,
 				451E393C29C79E466A9BED80 /* Copy Pods Resources */,
+				E9C074FE1D5D876200448869 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -277,6 +286,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OneFillSim/Pods-OneFillSim-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		E9C074FE1D5D876200448869 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run b6bff7f9d892076fe30d9fc608e2c42dc9376453 a04a63ce0bf7d1ee9858277a29bfea6cd6ca7440dcb00031c456a1d49c791341";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -430,6 +452,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(PODS_ROOT)/Headers/Public\"",
@@ -451,6 +477,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(PODS_ROOT)/Headers/Public\"",
